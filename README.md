@@ -1,8 +1,21 @@
 # cloud-haskell-socket-test
 
-A chat server using the distributed-process family of libraries.
+A "chat" server using the distributed-process family of libraries.
+It really just sends bytestreams from each client to all other clients.
+Not very smart!
 
-How it works:
+## Install
+
+    stack build
+    stack exec cloud-haskell-socket-test-exe
+
+## Use
+
+Connect and send/receive bytes to/from other clients:
+
+    nc localhost 4444
+
+# How it works
 
 * Single thread accepting new connections, spawns a new local process on
   client connect.
