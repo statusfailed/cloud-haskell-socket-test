@@ -1,4 +1,4 @@
-# cloud-haskell-chat
+# cloud-haskell-socket-test
 
 A chat server using the distributed-process family of libraries.
 
